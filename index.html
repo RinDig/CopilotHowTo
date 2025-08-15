@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 365 & Copilot Setup Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-header {
+            border-left: 4px solid #0078d4; /* Microsoft Blue */
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Microsoft 365 & Copilot Setup Guide</h1>
+            <p class="mt-4 text-lg text-gray-600">A step-by-step guide to setting up a demo environment for Pacific Life engagements.</p>
+        </header>
+
+        <main class="space-y-12">
+     
+            <!-- Licensing Options Section -->
+            <section id="licensing" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-900 section-header">Licensing Options</h2>
+                <div class="grid md:grid-cols-2 gap-8 mt-6">
+                    <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900">For Most Users: Business Plans</h3>
+                        <p class="mt-2 text-gray-600">Ideal for individuals and small teams who need a robust demo environment without the complexity of enterprise-level administration.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-700 list-disc list-inside">
+                            <li>Microsoft 365 Business Standard</li>
+                            <li>Microsoft 365 Business Premium</li>
+                        </ul>
+                        <a href="#business-setup" class="mt-6 inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-700 transition">Go to Business Setup</a>
+                    </div>
+                    <div class="border border-gray-200 p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold text-gray-900">For Advanced Needs: Enterprise Plans</h3>
+                        <p class="mt-2 text-gray-600">For situations requiring more advanced features, compliance, and security controls, or for larger-scale demos.</p>
+                        <ul class="mt-4 space-y-2 text-sm text-gray-700 list-disc list-inside">
+                            <li>Microsoft 365 E3</li>
+                            <li>Microsoft 365 E5</li>
+                        </ul>
+                         <a href="#enterprise-setup" class="mt-6 inline-block bg-gray-700 text-white font-semibold px-5 py-2 rounded-md hover:bg-gray-800 transition">Go to Enterprise Setup</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Account Setup Section -->
+            <section id="business-setup" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 section-header">Step-by-Step: Setting Up a Business Account</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">1</span>Purchase a Microsoft 365 Business Plan</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Navigate to the <a href="https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products" target="_blank" class="text-blue-600 hover:underline">Microsoft 365 for Business pricing page</a> and choose either Business Standard or Business Premium.</p>
+                        <div class="mt-2 p-4 bg-gray-100 rounded-md border border-gray-200 ml-11">
+                            <img src="images/business-plan-selection.png" alt="Screenshot of Microsoft 365 Business plan selection page" class="rounded-md border border-gray-300 shadow-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">2</span>Create a New Business Account</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Follow the prompts to set up a new account. You'll create a new user (e.g., `yourname@yourcompany.onmicrosoft.com`) and provide payment details.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-blue-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">3</span>Access the Microsoft 365 Admin Center</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Once your purchase is complete, go to <a href="https://admin.microsoft.com/Adminportal/Home" target="_blank" class="text-blue-600 hover:underline">admin.microsoft.com</a> and sign in with your new business credentials.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Enterprise Account Setup Section -->
+            <section id="enterprise-setup" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 section-header">Step-by-Step: Setting Up an Enterprise Account</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-gray-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">1</span>Purchase a Microsoft 365 Enterprise Plan</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Go to the <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-microsoft-365-and-office-365" target="_blank" class="text-blue-600 hover:underline">Microsoft 365 Enterprise pricing page</a> and select a plan (E3 or E5 are recommended).</p>
+                        <div class="mt-2 p-4 bg-gray-100 rounded-md border border-gray-200 ml-11">
+                             <img src="images/enterprise-plan-selection.png" alt="Screenshot of Microsoft 365 Enterprise plan selection page" class="rounded-md border border-gray-300 shadow-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-gray-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">2</span>Follow the Enterprise Setup Process</h3>
+                        <p class="text-gray-600 mt-2 ml-11">The process is similar to the business setup but may involve more detailed configuration options. You'll create a new tenant and a global administrator account.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-gray-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">3</span>Access the Microsoft 365 Admin Center</h3>
+                        <p class="text-gray-600 mt-2 ml-11">As with the business setup, you'll manage your licenses and users through the <a href="https://admin.microsoft.com/Adminportal/Home" target="_blank" class="text-blue-600 hover:underline">admin.microsoft.com</a> portal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Laptop Preparation Section -->
+            <section id="laptop-prep" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 section-header">Preparing Your Laptop</h2>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-teal-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">1</span>Create a Clean Work Profile</h3>
+                        <p class="text-gray-600 mt-2 ml-11">In your web browser (Edge is recommended), create a new profile and sign in with your new Microsoft 365 work account. This keeps your demo environment separate from your personal accounts.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-teal-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">2</span>Sign Into Microsoft 365 Apps</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Open each Microsoft 365 application (Word, Excel, PowerPoint, Outlook, Teams) and sign out of any personal accounts. Then, sign in with your new work account. You may need to click 'update liscense' for Copilot button to show up in EACH of the office apps.</p>
+                        <div class="mt-2 p-4 bg-gray-100 rounded-md border border-gray-200 ml-11">
+                            <img src="images/office-account-signin.png" alt="Screenshot of Office Account page showing the correct user signed in" class="rounded-md border border-gray-300 shadow-sm">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800"><span class="bg-teal-500 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 inline-flex">3</span>Set Up OneDrive</h3>
+                        <p class="text-gray-600 mt-2 ml-11">Set up OneDrive to sync with your new work account. This will allow you to easily save and access demo files.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Data Hygiene Section -->
+            <section id="data-hygiene" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 section-header">Data Hygiene and Best Practices</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-lg font-medium text-gray-900">Use Only Synthetic Data</p>
+                            <p class="mt-1 text-gray-600">Never use real client data or personally identifiable information in your demo environment. Create mock documents, spreadsheets, and presentations.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                             <svg class="h-8 w-8 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-lg font-medium text-gray-900">Keep Profiles Separate</p>
+                            <p class="mt-1 text-gray-600">Always use a dedicated browser profile for your demo work to avoid any crossover with personal or other work accounts.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-8 w-8 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-lg font-medium text-gray-900">Do Not Connect to Client Tenants</p>
+                            <p class="mt-1 text-gray-600">This demo environment should remain completely independent and should not be connected to any Pacific Life or other client systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Final Checklist Section -->
+            <section id="final-checklist" class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-gray-900 section-header">Final Checklist</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center"><input id="check1" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check1" class="text-gray-700">Microsoft 365 Business or Enterprise plan is active.</label></li>
+                    <li class="flex items-center"><input id="check2" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check2" class="text-gray-700">"Copilot for Microsoft 365" add-on is purchased and assigned.</label></li>
+                    <li class="flex items-center"><input id="check3" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check3" class="text-gray-700">Signed into a dedicated browser profile with the new work account.</label></li>
+                    <li class="flex items-center"><input id="check4" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check4" class="text-gray-700">Signed into all Microsoft 365 apps with the new work account.</label></li>
+                    <li class="flex items-center"><input id="check5" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check5" class="text-gray-700">OneDrive is set up and syncing.</label></li>
+                    <li class="flex items-center"><input id="check6" type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mr-3"><label for="check6" class="text-gray-700">Demo content (synthetic data) is created and ready.</label></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 text-sm text-gray-500">
+            <p>This guide is intended for internal use only. Please do not share with external parties.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
